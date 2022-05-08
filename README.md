@@ -22,7 +22,7 @@ Specifically, we investigated the difference of model’s uncertainty between fe
 
 This repository is presenting all the two relevant codes we used to develop this project, a base_nn.py and base_lstm.py. These files employ yahoo! API and the wikipedia SP500 ticker lists, collect the price data of SP500 index and the individual 500 stocks for past 10 years, and preprocesse the data to compute return rates and technical indices, eliminate missing values,  reduce feature dimensions, split train and test data, and construct input tensors. Then, the feed forward neural networks or LSTM models are trained under different settings of model and hyperparameters. As a result, they compute and visualize the uncertainty of the models and using MC Dropout. The codes for developing comparative analyses under different settings and the plots of loss and uncertainty are also included.
 
-There are no other files because this project uses only the data available online.
+Also, there are image files for expalination in this README.md in images directory. There are no other files because this project uses only the data available online.
 
 # Motivations
 
