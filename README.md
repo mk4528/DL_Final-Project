@@ -57,7 +57,7 @@ For trained deep learning model, compute model misspecification uncertainty ${\r
 
 # Entire pipeline summary
 
-![image.png](attachment:image.png)
+![image.png](https://github.com/mk4528/DL_Final-Project/blob/main/images/pipeline%20summary.png)
 
 # Data, Target and features
 
@@ -117,7 +117,7 @@ Low dropout probability (say 1%) leads to low uncertainty, while relatively high
 
 - Note that train data size in out experiment is N≒2000 which is small for using neural network in the first place. We should also do experiment for larger data.
 
-![LSTM](attachment:/images/image_1.png)
+![LSTM](https://github.com/mk4528/DL_Final-Project/blob/main/images/image_1.png)
 
 # Conclusion
 
