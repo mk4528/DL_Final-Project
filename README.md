@@ -61,7 +61,7 @@ For trained deep learning model, compute model misspecification uncertainty ${\r
 
 # Data, Target and features
 
- - Original Data: daily price data (May-7-2012 to May-2-2022)                                                                   of S&P 500 and IS: individual stocks  selected as one of S&P 500
+ - Original Data: daily price data (May-7-2012 to May-2-2022) of S&P 500 and IS: individual stocks  selected as one of S&P 500
  - Data Selection: exclude IS with less period data & IS highly (> 0.7) correlated with another IS
  - Data Transformation: 
    - SP500_rate, IS_rate: Rate of Change for S&P 500 and IS
@@ -97,17 +97,17 @@ Utilizing MC Dropout, we examined all the comparison of uncertainty listed below
 
 In the following result graph, loss and uncertainty is correlated, i.e. stopping at optimal epoch in terms of validation loss leads to lower uncertainty. Because of the correlation, superior optimization method (w.r.t. epoch or wall clock time) would lead to lower uncertainty, especially in the case with the smaller number of epochs.
 
-![image_optimizer_epoch_relation.png](attachment:image_optimizer_epoch_relation.png)
+![image_optimizer_epoch_relation.png](attachment:https://github.com/mk4528/DL_Final-Project/blob/main/images/image_optimizer_epoch_relation.png)
 
-![image_optimizer_epoch-2.png](attachment:image_optimizer_epoch-2.png)
+![image_optimizer_epoch-2.png](attachment:https://github.com/mk4528/DL_Final-Project/blob/main/images/image_optimizer_epoch.png)
 
 ## Dropout probability
 
 Low dropout probability (say 1%) leads to low uncertainty, while relatively high probability (20%, 50%) leads to low MSE/MAE on the test data (might be coming from the variance p(1-p) of a Bernoulli random variable). There appears to be a trade-off of the model's uncertainty to loss between some models with different drop rates.
 
-![image_dropout_relation.png](attachment:image_dropout_relation.png)
+![image_dropout_relation.png](attachment:https://github.com/mk4528/DL_Final-Project/blob/main/images/image_dropout_relation.png)
 
-![image_dropout_band.png](attachment:image_dropout_band.png)
+![image_dropout_band.png](attachment:https://github.com/mk4528/DL_Final-Project/blob/main/images/image_dropout_band.png)
 
 ## LSTM Model
 
@@ -117,7 +117,7 @@ Low dropout probability (say 1%) leads to low uncertainty, while relatively high
 
 - Note that train data size in out experiment is N≒2000 which is small for using neural network in the first place. We should also do experiment for larger data.
 
-![image_1-2.png](attachment:image_1-2.png)
+![LSTM](attachment:https://github.com/mk4528/DL_Final-Project/blob/main/images/image_1.png)
 
 # Conclusion
 
