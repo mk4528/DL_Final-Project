@@ -92,7 +92,7 @@ Utilizing MC Dropout, we examined all the comparison of uncertainty listed below
 
 ## Optimization methods and Epochs
 
-In the following result graph, loss and uncertainty is correlated, i.e. stopping at optimal epoch in terms of validation loss leads to lower uncertainty. Because of the correlation, superior optimization method (w.r.t. epoch or wall clock time) would lead to lower uncertainty, especially in the case with the smaller number of epochs.
+In the following resulting graphs, we computed the windth of 90% prediction intervals and MAE for test data (last two years). As you see, loss and uncertainty is correlated, i.e. stopping at optimal epoch in terms of validation loss leads to lower uncertainty. Because of the correlation, superior optimization method (w.r.t. epoch or wall clock time) would lead to lower uncertainty, especially in the case with the smaller number of epochs.
 
 ![image_optimizer_epoch_relation.png](https://github.com/mk4528/DL_Final-Project/blob/main/images/image_optimizer_epoch_relation.png)
 
@@ -100,7 +100,7 @@ In the following result graph, loss and uncertainty is correlated, i.e. stopping
 
 ## Dropout probability
 
-Low dropout probability (say 1%) leads to low uncertainty, while relatively high probability (20%, 50%) leads to low MSE/MAE on the test data (might be coming from the variance p(1-p) of a Bernoulli random variable). There appears to be a trade-off of the model's uncertainty to loss between some models with different drop rates.
+We again computed the windth of prediction intervals and MAE for test data. Low dropout probability (say 1%) leads to low uncertainty, while relatively high probability (20%, 50%) leads to low MSE/MAE on the test data (might be coming from the variance p(1-p) of a Bernoulli random variable). There appears to be a trade-off of the model's uncertainty to loss between some models with different drop rates.
 
 ![image_dropout_relation.png](https://github.com/mk4528/DL_Final-Project/blob/main/images/image_dropout_relation.png)
 
