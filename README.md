@@ -39,12 +39,12 @@ Also, there are image files for expalination in this README.md in images directo
 1. Define model uncertainty as predictive distribution $p(y^*|x^*)$ for new sample $(x^*, y^*)$
 
 
-2. Decompose the predictive variance into model misspecification uncertainty (1st term) and inherent uncertainty (2nd term):
+2. Decompose the predictive variance into model uncertainty (1st term) and inherent uncertainty (2nd term):
 $$
 ~\\
 {\rm Var}(y^*|x^*) = {\rm Var}(f(x^*)) + E[{\rm Var}(y^*|x^*)]. \\
 $$
-For trained deep learning model, compute model misspecification uncertainty ${\rm Var}(f(x^*))$ using Monte Carlo dropout [[1]](https://arxiv.org/pdf/1506.02142.pdf)
+For trained deep learning model, compute model uncertainty ${\rm Var}(f(x^*))$ using Monte Carlo dropout [[1]](https://arxiv.org/pdf/1506.02142.pdf)
   
  
 3. We conduct comparisons of uncertainty with different models and under different settings such as the following and clarify what factors affect the amount of uncertainty and how.
