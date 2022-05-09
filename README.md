@@ -36,12 +36,12 @@ Also, there are image files for expalination in this README.md in images directo
 
 # Approach/Techniques
 
-1. Define model uncertainty as predictive distribution <img src="https://latex.codecogs.com/gif.latex?p(y^*|x^*)/> for new sample <img src="https://latex.codecogs.com/gif.latex?(x^*, y^*)/>
+1. Define model uncertainty as predictive distribution <img src="https://latex.codecogs.com/svg.image?p(y^*|x^*)"/> for new sample <img src="https://latex.codecogs.com/svg.image?(x^*,&space;y^*)"/>
 
 
 2. Decompose the predictive variance into model uncertainty (1st term) and inherent uncertainty (2nd term):
-<img src="https://latex.codecogs.com/gif.latex?{\rm Var}(y^*|x^*) = {\rm Var}(f(x^*)) + E[{\rm Var}(y^*|x^*)]. />
-For trained deep learning model, compute model uncertainty ${\rm Var}(f(x^*))$ using Monte Carlo dropout [[1]](https://arxiv.org/pdf/1506.02142.pdf)
+<img src="https://latex.codecogs.com/svg.image?{\rm&space;Var}(y^*|x^*)&space;=&space;{\rm&space;Var}(f(x^*))&space;&plus;&space;E[{\rm&space;Var}(y^*|x^*)]" />.
+For trained deep learning model, compute model uncertainty <img src="https://latex.codecogs.com/svg.image?{\rm&space;Var}(f(x^*))" /> using Monte Carlo dropout [[1]](https://arxiv.org/pdf/1506.02142.pdf)
   
  
 3. We conduct comparisons of uncertainty with different models and under different settings such as the following and clarify what factors affect the amount of uncertainty and how.
@@ -87,7 +87,7 @@ Utilizing MC Dropout, we examined all the comparison of uncertainty listed below
 - Optimization methods: SGD/Adagrad/Adadelta/RMSprop/Adam/Nadam
 - Epochs: 10, 20, 30, 50, 75, 100, 200
 - Dropout probabilities: 0.01, 0.05, 0.1, 0.2, 0.5
- - by changing Dropout probabilities, we investigate how the uncertainty due to model misspecification behaves for models with different regularization (dropout probability)
+ - by changing Dropout probabilities, we investigate how the model uncertainty behaves for models with different regularization (dropout probability)
 - Models: feed forward NN models and LSTM
 
 ## Optimization methods and Epochs
