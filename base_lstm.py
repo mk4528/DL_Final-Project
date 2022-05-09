@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1I6b-HHPQK4Znx7yNCabSgzR13hdHwHWk
 """
 
-!nvidia-smi
-
 import pandas as pd
 
 # There are 2 tables on the Wikipedia page
@@ -20,8 +18,6 @@ second_table = payload[1]
 symbols = first_table.Symbol
 first_table.head()
 
-!pip install yfinance
-!pip install talib-binary
 
 import numpy as np
 import matplotlib.pyplot as plt

@@ -7,6 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/16lHDKow5RkMoMrpDF8DyWXsaCL7Bf_sy
 """
 
+# Commented out IPython magic to ensure Python compatibility.
 import pandas as pd
 payload = pd.read_html('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
 symbols = payload[0].Symbol
@@ -18,6 +19,7 @@ import talib as ta
 import time
 import pandas_datareader.data as web
 import datetime
+
 
 period_y = '11y'
 
