@@ -20,9 +20,9 @@ Specifically, we investigated the difference of model’s uncertainty between fe
 
 # About this Repository
 
-This repository is presenting all the two relevant codes we used to develop this project, a base_nn.py and base_lstm.py. These files employ yahoo! API and the wikipedia SP500 ticker lists, collect the price data of SP500 index and the individual 500 stocks for past 10 years, and preprocesse the data to compute return rates and technical indices, eliminate missing values,  reduce feature dimensions, split train and test data, and construct input tensors. Then, the feed forward neural networks or LSTM models are trained under different settings of model and hyperparameters. As a result, they compute and visualize the uncertainty of the models and using MC Dropout. The codes for developing comparative analyses under different settings and the plots of loss and uncertainty are also included.
+This repository is presenting all the two relevant codes we used to develop this project in two file types, base_nn.ipynb and base_lstm.ipynb, and base_nn.py and base_lstm.py. These files employ yahoo! API and the wikipedia SP500 ticker lists, collect the price data of SP500 index and the individual 500 stocks for past 10 years, and preprocess the data to compute return rates and technical indices, eliminate missing values, reduce feature dimensions, split train and test data, and construct input tensors. Then, the feed forward neural networks (base_nn.ipynb and base_nn.py) or LSTM models (base_lstm.ipynb and base_lstm.py) are trained under different settings of model and hyperparameters. As a result, they compute and visualize the uncertainty of the models and using MC Dropout. The codes for some of developing comparative analyses under different settings and the plots of loss and uncertainty are also included.
 
-Also, there are image files for expalination in this README.md in images directory. There are no other files because this project uses only the data available online.
+Also, there are image files for the expalination in this README.md in images directory. There are no other files because this project uses only the data available online.
 
 # Motivations
 
@@ -57,7 +57,7 @@ For trained deep learning model, compute model uncertainty <img src="https://lat
 ![image.png](https://github.com/mk4528/DL_Final-Project/blob/main/images/pipeline%20summary.png)
 
 # Data, Target and features
-
+In this project, we predict S&P 500 indices on **two business days future (t+2) using today (t) and last three days' (t-1, t-2, t-3)** S&P500 indices, individual stock prices and their technical indices (e.g. momentum).
  - Original Data: daily price data (May-7-2012 to May-2-2022) of S&P 500 and IS: individual stocks  selected as one of S&P 500
  - Data Selection: exclude IS with less period data & IS highly (> 0.7) correlated with another IS
  - Data Transformation: 
@@ -73,10 +73,12 @@ For trained deep learning model, compute model uncertainty <img src="https://lat
 
 # Example commands to execute the code
 
-- To execute the `py` file in the git repository, execute the codes like the ones below:
-
+- You can excute our codes in `.ipynb` files in the git repository in order from the top. Or, to execute the `.py` files (only includes the same contents as the same named `.ipynb` files without output examples in `.ipynb` files), execute the codes with pip install commands like the ones below:
 
 ```python
+pip install yfinance
+pip install talib-binary
+
 python base_nn.py
 python base_lstm.py
 ```
