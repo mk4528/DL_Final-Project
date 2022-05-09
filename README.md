@@ -97,17 +97,17 @@ Utilizing MC Dropout, we examined all the comparison of uncertainty listed below
 
 In the following result graph, loss and uncertainty is correlated, i.e. stopping at optimal epoch in terms of validation loss leads to lower uncertainty. Because of the correlation, superior optimization method (w.r.t. epoch or wall clock time) would lead to lower uncertainty, especially in the case with the smaller number of epochs.
 
-![image_optimizer_epoch_relation.png](attachment:/images/image_optimizer_epoch_relation.png)
+![image_optimizer_epoch_relation.png](https://github.com/mk4528/DL_Final-Project/blob/main/images/image_optimizer_epoch_relation.png)
 
-![image_optimizer_epoch-2.png](attachment:/images/image_optimizer_epoch.png)
+![image_optimizer_epoch-2.png](https://github.com/mk4528/DL_Final-Project/blob/main/images/image_optimizer_epoch.png)
 
 ## Dropout probability
 
 Low dropout probability (say 1%) leads to low uncertainty, while relatively high probability (20%, 50%) leads to low MSE/MAE on the test data (might be coming from the variance p(1-p) of a Bernoulli random variable). There appears to be a trade-off of the model's uncertainty to loss between some models with different drop rates.
 
-![image_dropout_relation.png](attachment:/images/image_dropout_relation.png)
+![image_dropout_relation.png](https://github.com/mk4528/DL_Final-Project/blob/main/images/image_dropout_relation.png)
 
-![image_dropout_band.png](attachment:images/image_dropout_band.png)
+![image_dropout_band.png](https://github.com/mk4528/DL_Final-Project/blob/main/images/image_dropout_band.png)
 
 ## LSTM Model
 
