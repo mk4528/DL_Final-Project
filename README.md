@@ -36,14 +36,11 @@ Also, there are image files for expalination in this README.md in images directo
 
 # Approach/Techniques
 
-1. Define model uncertainty as predictive distribution $p(y^*|x^*)$ for new sample $(x^*, y^*)$
+1. Define model uncertainty as predictive distribution <img src="https://latex.codecogs.com/gif.latex?p(y^*|x^*)/> for new sample <img src="https://latex.codecogs.com/gif.latex?(x^*, y^*)/>
 
 
 2. Decompose the predictive variance into model uncertainty (1st term) and inherent uncertainty (2nd term):
-$$
-~\\
-{\rm Var}(y^*|x^*) = {\rm Var}(f(x^*)) + E[{\rm Var}(y^*|x^*)]. \\
-$$
+<img src="https://latex.codecogs.com/gif.latex?{\rm Var}(y^*|x^*) = {\rm Var}(f(x^*)) + E[{\rm Var}(y^*|x^*)]. />
 For trained deep learning model, compute model uncertainty ${\rm Var}(f(x^*))$ using Monte Carlo dropout [[1]](https://arxiv.org/pdf/1506.02142.pdf)
   
  
